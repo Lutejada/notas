@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
 })
 
 //statics 
+app.use(express.static(path.join(__dirname, 'public'))); // se enruta la carpeta public
 
 
 
